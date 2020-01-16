@@ -54,9 +54,9 @@ $resultat4 = $bdd->query($sql);
 </div>
 
 <div id="lien">
-    <a href="ajout_eleves.php">Ajouter un élève</a>
-    <a href="supprimer_eleve.php">Supprimer un élève</a>
-    <a href="maj_eleve.php">Mettre à jour un élève</a>
+    <a href="ajout_eleves.php"> Ajouter un élève </a> |
+    <a href="supprimer_eleve.php"> Supprimer un élève </a> |
+    <a href="maj_eleve.php"> Mettre à jour un élève </a> |
 </div>
 
 <!-- Optional -->
