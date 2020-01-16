@@ -67,7 +67,7 @@ $resultat4 = $bdd->query($sql);
 
 
 
-
+<?php
 
 
 

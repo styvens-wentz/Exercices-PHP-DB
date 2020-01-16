@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<form action="index.php" method="post">
+<form action="ajout_eleves.php" method="post">
     <fieldset>
         <legend>Ajouter un élèves</legend>
         <label for="ajnom">Nom: </label><br><input type="text" name="nom" id="ajnom" required><br><br>
