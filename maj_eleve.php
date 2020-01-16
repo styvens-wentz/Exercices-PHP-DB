@@ -14,8 +14,8 @@
     <fieldset>
         <legend>Supprimer un élève</legend>
         <label for="idmaj">Indiquer son ID: </label><br><br><input type="number" name="id" id="idmaj" required><br><br>
-        <label for="nommaj">Nouveau nom: </label><br><br><input type="number" name="nom" id="nommaj" required><br><br>
-        <label for="prenommaj">Nouveau Prénom: </label><br><br><input type="number" name="prenom" id="prenommaj" required><br><br>
+        <label for="nommaj">Nouveau nom: </label><br><br><input type="text" name="nom" id="nommaj" required><br><br>
+        <label for="prenommaj">Nouveau Prénom: </label><br><br><input type="text" name="prenom" id="prenommaj" required><br><br>
         <label for="agemaj">Nouvelle age: </label><br><br><input type="number" name="age" id="agemaj" required><br><br>
         <input type="submit" value="Valider" id="ajouter">
         <input type="reset" value="Effacer" id="effacer">
