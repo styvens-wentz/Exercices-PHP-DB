@@ -49,7 +49,7 @@ $majEleves = function ($idEleve, $nom, $prenom, $age) use ($servername, $user, $
     $bdd->query($sql);
 };
 
-if (isset($_POST['id'])) {
+if (isset($_POST['id']) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['age'])) {
     $majEleves($_POST['id'], $_POST['nom'], $_POST['prenom'], $_POST['age']);
     echo "<script> alert(\"L'Élève ayant pour id '".$_POST['id']."' a était mis à jour\") </script>";
     echo "<script>document.location='index.php';</script>";
