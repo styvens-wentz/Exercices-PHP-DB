@@ -62,6 +62,13 @@ input:not(#ajouter):not(#effacer) {
     border-bottom: 3px ridge;
 }
 
+.afficher .col-sm-12 {
+    color: green;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
 #lien {
     width: 100%;
     text-align: center;
@@ -79,4 +86,6 @@ input {
 #titre {
     text-align: center;
     margin-bottom: 20px;
+    color: cadetblue;
+    text-decoration: underline;
 }
