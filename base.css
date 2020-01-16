@@ -75,3 +75,8 @@ input:not(#ajouter):not(#effacer) {
 input {
     text-align: center;
 }
+
+#titre {
+    text-align: center;
+    margin-bottom: 20px;
+}

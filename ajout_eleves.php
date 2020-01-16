@@ -51,7 +51,7 @@ $ajoutEleves = function ($nom, $prenom, $age) use ($servername, $user, $password
 
 if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['age'])) {
     $ajoutEleves($_POST['nom'], $_POST['prenom'], $_POST['age']);
-    echo "<script> alert(\"L'Élève".$_POST['nom']." ".$_POST['prenom']."agé de".$_POST['age']."ans à était ajouté.\") </script>";
+    echo "<script> alert(\"L'Élève".$_POST['nom']." ".$_POST['prenom']."agé de ".$_POST['age']." ans à était ajouté.\") </script>";
     echo "<script>document.location='index.php';</script>";
     exit();
 }

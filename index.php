@@ -28,6 +28,7 @@ $resultat4 = $bdd->query($sql);
     <title>Liste des élèves</title>
 </head>
 <body>
+<h1 id="titre">Liste des élèves</h1>
 
 <div class="row afficher">
     <div class="col-md-3" id="id"><h4>ID</h4>
