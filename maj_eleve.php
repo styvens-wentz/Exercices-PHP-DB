@@ -45,7 +45,7 @@ $bdd = new mysqli($servername, $user, $password);
 $bdd->select_db($dbname);
 
 $majEleves = function ($idEleve, $nom, $prenom, $age) use ($servername, $user, $password, $dbname, $bdd) {
-    $sql = "UPDATE `eleves` SET `nom` = $nom, `prenom` = $prenom, `age` = $age WHERE `eleves`.`id` = $idEleve";
+    $sql = "UPDATE `eleves` SET `nom` = '$nom', `prenom` = '$prenom', `age` = '$age' WHERE `eleves`.`id` = '$idEleve'";
     $bdd->query($sql);
 };
 
