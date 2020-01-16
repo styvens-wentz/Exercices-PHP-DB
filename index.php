@@ -55,6 +55,7 @@ $resultat4 = $bdd->query($sql);
 
 <div id="lien">
     <a href="ajout_eleves.php">Ajouter un élève</a>
+    <a href="supprimer_eleve.php">Supprimer un élève</a>
 </div>
 
 <!-- Optional -->
@@ -76,8 +77,5 @@ $majEleves = function ($idEleve, $nom, $prenom, $age) use ($servername, $user, $
     $bdd->query($sql);
 };
 
-$supprimerEleve = function ($idEleve) use ($servername, $user, $password, $dbname, $bdd) {
-    $sql = "DELETE FROM `eleves` WHERE `eleves`.`id` = $idEleve";
-    $bdd->query($sql);
-};
+
 

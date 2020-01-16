@@ -10,13 +10,11 @@
 </head>
 <body>
 
-<form action="ajout_eleves.php" method="post">
+<form action="supprimer_eleve.php" method="post">
     <fieldset>
-        <legend>Ajouter un élèves</legend>
-        <label for="ajnom">Nom: </label><br><input type="text" name="nom" id="ajnom" required><br><br>
-        <label for="ajprenom">Prénom: </label><br><input type="text" name="prenom" id="ajprenom" required><br><br>
-        <label for="ajage">Age: </label><br><input type="number" name="age" id="ajage" required><br><br>
-        <input type="submit" value="Ajouter" id="ajouter">
+        <legend>Supprimer un élève</legend>
+        <label for="idSup">Ajout son ID: </label><br><br><input type="number" name="id" id="idSup" required><br><br>
+        <input type="submit" value="Supprimer" id="ajouter">
         <input type="reset" value="Effacer" id="effacer">
     </fieldset>
 </form>
@@ -32,6 +30,7 @@
 </body>
 </html>
 
+
 <?php
 $servername = "localhost";
 $user = "id11258159_styvens";
@@ -42,16 +41,14 @@ $bdd = new mysqli($servername, $user, $password);
 
 $bdd->select_db($dbname);
 
-$ajoutEleves = function ($nom, $prenom, $age) use ($servername, $user, $password, $dbname, $bdd) {
-    $stmt = $bdd->prepare("INSERT INTO eleves (nom,prenom,age) VALUES (?, ?, ?)");
-    $stmt->bind_param("ssi", $nom, $prenom, $age);
-
-    $stmt->execute();
+$supprimerEleve = function ($idEleve) use ($servername, $user, $password, $dbname, $bdd) {
+    $sql = "DELETE FROM `eleves` WHERE `eleves`.`id` = $idEleve";
+    $bdd->query($sql);
 };
 
-if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['age'])) {
-    $ajoutEleves($_POST['nom'], $_POST['prenom'], $_POST['age']);
-    echo "<script> alert(\"L'Élève".$_POST['nom']." ".$_POST['prenom']."agé de".$_POST['age']."ans à était ajouté.\") </script>";
+if (isset($_POST['id'])) {
+    $supprimerEleve($_POST['id']);
+    echo "<script> alert(\"L'Élève ayant pour id '".$_POST['id']."' a était supprimer\") </script>";
     echo "<script>document.location='index.php';</script>";
     exit();
 }
