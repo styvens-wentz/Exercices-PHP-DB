@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="base.css">
-    <title>Formulaire élèves</title>
+    <title>Ajouter un élèves</title>
 </head>
 <body>
 
@@ -16,7 +16,7 @@
         <label for="ajnom">Nom: </label><br><input type="text" name="nom" id="ajnom" required><br><br>
         <label for="ajprenom">Prénom: </label><br><input type="text" name="prenom" id="ajprenom" required><br><br>
         <label for="ajage">Age: </label><br><input type="number" name="age" id="ajage" required><br><br>
-        <input type="submit" value="Ajouter" id="ajouter">
+        <input type="submit" value="Valider" id="ajouter">
         <input type="reset" value="Effacer" id="effacer">
     </fieldset>
 </form>

@@ -56,6 +56,7 @@ $resultat4 = $bdd->query($sql);
 <div id="lien">
     <a href="ajout_eleves.php">Ajouter un élève</a>
     <a href="supprimer_eleve.php">Supprimer un élève</a>
+    <a href="maj_eleve.php">Mettre à jour un élève</a>
 </div>
 
 <!-- Optional -->
@@ -72,10 +73,7 @@ $resultat4 = $bdd->query($sql);
 
 
 
-$majEleves = function ($idEleve, $nom, $prenom, $age) use ($servername, $user, $password, $dbname, $bdd) {
-    $sql = "UPDATE `eleves` SET `nom` = $nom, `prenom` = $prenom, `age` = $age WHERE `eleves`.`id` = $idEleve";
-    $bdd->query($sql);
-};
+
 
 
 

@@ -30,7 +30,7 @@ input:not(#ajouter):not(#effacer) {
 
 #ajouter, #effacer {
     height: 40px;
-    width: 115px;
+    width: 100px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
