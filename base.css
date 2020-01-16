@@ -71,3 +71,7 @@ input:not(#ajouter):not(#effacer) {
 #idSup, #idmaj, #agemaj {
     width: 70px !important;
 }
+
+input {
+    text-align: center;
+}
