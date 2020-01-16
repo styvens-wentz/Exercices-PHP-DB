@@ -67,14 +67,3 @@ $resultat4 = $bdd->query($sql);
 <!-- Script JS -->
 </body>
 </html>
-
-
-
-<?php
-
-
-
-
-
-
-
