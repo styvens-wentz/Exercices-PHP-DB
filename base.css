@@ -68,6 +68,6 @@ input:not(#ajouter):not(#effacer) {
     font-size: 25px;
 }
 
-#idSup {
+#idSup, #idmaj, #agemaj {
     width: 70px !important;
 }
