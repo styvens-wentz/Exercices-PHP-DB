@@ -12,7 +12,7 @@
 
 <form action="maj_eleve.php" method="post">
     <fieldset>
-        <legend>Supprimer un élève</legend>
+        <legend>Mettre à jour un élève</legend>
         <label for="idmaj">Indiquer son ID: </label><br><br><input type="number" name="id" id="idmaj" required><br><br>
         <label for="nommaj">Nouveau nom: </label><br><br><input type="text" name="nom" id="nommaj" required><br><br>
         <label for="prenommaj">Nouveau Prénom: </label><br><br><input type="text" name="prenom" id="prenommaj" required><br><br>
